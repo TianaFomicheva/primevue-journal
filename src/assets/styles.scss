@@ -1,0 +1,66 @@
+@import "primeflex/primeflex.scss";
+@import "primevue/resources/primevue.min.css";
+@import "primevue/resources/themes/lara-light-blue/theme.css";
+
+header {
+  display: flex;
+  justify-content: space-between;
+}
+.content{
+  padding-top: 10px
+}
+.card-content {
+  display: flex;
+  font-size: 0.8rem;
+}
+.main-info {
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+  text-align: left;
+}
+.user-info{
+  display: flex;
+  flex-direction: column;
+  width:25%;
+}
+.info {
+  &-row {
+    display: flex;
+    width: 100%;
+  }
+  &-label{
+    width: 40%;
+    text-align: left;
+  }
+  &-data{
+    width: 60%;
+  }
+}
+.ava{
+  height: 40px;
+  width:40px;
+  border-radius: 20px;
+  background: #eee;
+  margin: auto;
+
+}
+.p-card{
+  height: 200px;
+  &.read {
+    opacity: 0.5;
+  }
+}
+.p-tabmenu .p-tabmenu-nav {
+  background: #ffffff;
+  border: 1px solid #dee2e6;
+  border-width: 1px;
+  border-radius: 5px;
+}
+.p-tabmenu .p-tabmenu-nav .p-tabmenuitem .p-menuitem-link {
+  padding: 0.85rem;
+  border-width: 1px;
+  margin:0;
+  background: transparent;
+  border-color: transparent
+}

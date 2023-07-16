@@ -1,0 +1,42 @@
+[
+    {
+        "importance": "Высокая",
+        "equipment": "Вегас",
+        "message": "Сервер Vegas недоступен",
+        "responsible": "Смирнов В.А",
+        "read": false,
+        "date": ""
+    },
+    {
+        "importance": "Высокая",
+        "equipment": "Вегас",
+        "message": "Сервер Vegas недоступен",
+        "responsible": "Смирнов В.А",
+        "read": false,
+        "date": ""
+    },
+    {
+        "importance": "Низкая",
+        "equipment": "Коммутатор",
+        "message": "Потеряно сетевое оборудование",
+        "responsible": "Капусти С.С",
+        "read": false,
+        "date": ""
+    },
+    {
+        "importance": "Низкая",
+        "equipment": "Люк",
+        "message": "Открыта крышка",
+        "responsible": "Ветрова И.С",
+        "read": false,
+        "date": ""
+    },
+    {
+        "importance": "Высокая",
+        "equipment": "Вегас",
+        "message": "Сервер Vegas недоступен",
+        "responsible": "Смирнов В.А",
+        "read": false,
+        "date": ""
+    }
+]
