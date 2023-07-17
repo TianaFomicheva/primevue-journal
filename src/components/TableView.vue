@@ -10,7 +10,7 @@ const computedData = computed(() => data.value || [])
 
 <template>
   <DataTable :value="computedData" paginator :rows="5" :rowsPerPageOptions="[5, 10, 20, 50]" :key="computedData.length">
-        <Column field="Date" header="Дата"></Column>
+        <Column field="date" header="Дата"></Column>
         <Column field="importance" header="Важность"></Column>
         <Column field="equipment" header="Оборудование"></Column>
         <Column field="message" header="Сообщение">

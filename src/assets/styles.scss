@@ -6,8 +6,8 @@ header {
   display: flex;
   justify-content: space-between;
 }
-.content{
-  padding-top: 10px
+.content {
+  padding-top: 10px;
 }
 .card-content {
   display: flex;
@@ -19,33 +19,32 @@ header {
   width: 75%;
   text-align: left;
 }
-.user-info{
+.user-info {
   display: flex;
   flex-direction: column;
-  width:25%;
+  width: 25%;
 }
 .info {
   &-row {
     display: flex;
     width: 100%;
   }
-  &-label{
+  &-label {
     width: 40%;
     text-align: left;
   }
-  &-data{
+  &-data {
     width: 60%;
   }
 }
-.ava{
+.ava {
   height: 40px;
-  width:40px;
+  width: 40px;
   border-radius: 20px;
   background: #eee;
   margin: auto;
-
 }
-.p-card{
+.p-card {
   height: 200px;
   &.read {
     opacity: 0.5;
@@ -53,14 +52,24 @@ header {
 }
 .p-tabmenu .p-tabmenu-nav {
   background: #ffffff;
-  border: 1px solid #dee2e6;
-  border-width: 1px;
+  border: none;
   border-radius: 5px;
-}
-.p-tabmenu .p-tabmenu-nav .p-tabmenuitem .p-menuitem-link {
-  padding: 0.85rem;
-  border-width: 1px;
-  margin:0;
-  background: transparent;
-  border-color: transparent
+  & .p-tabmenuitem {
+    border-width: 1px;
+    border-color: #adb5bd;
+    &:not(.p-highlight):not(.p-disabled) .p-menuitem-link {
+      border-color: #adb5bd;
+      color: #6c757d;
+    }
+    & .p-menuitem-link {
+      padding: 0.85rem;
+      border-width: 1px;
+      margin: 0;
+      background: transparent;
+      border-color: transparent;
+      &:not(.p-disabled):focus {
+        box-shadow: none;
+      }
+    }
+  }
 }

@@ -9,9 +9,9 @@
     },
     {
         "importance": "Высокая",
-        "equipment": "Вегас",
-        "message": "Сервер Vegas недоступен",
-        "responsible": "Смирнов В.А",
+        "equipment": "ИБП",
+        "message": "Низкий заряд батареи",
+        "responsible": "Лавочкин А.В.",
         "read": false,
         "date": ""
     },
@@ -19,7 +19,7 @@
         "importance": "Низкая",
         "equipment": "Коммутатор",
         "message": "Потеряно сетевое оборудование",
-        "responsible": "Капусти С.С",
+        "responsible": "Капустин С.С",
         "read": false,
         "date": ""
     },
@@ -32,10 +32,18 @@
         "date": ""
     },
     {
-        "importance": "Высокая",
-        "equipment": "Вегас",
-        "message": "Сервер Vegas недоступен",
-        "responsible": "Смирнов В.А",
+        "importance": "Критическая",
+        "equipment": "Трансформатор",
+        "message": "Недостаточное количество масла",
+        "responsible": "Ольшанская Е.Г",
+        "read": false,
+        "date": ""
+    },
+    {
+        "importance": "Критическая",
+        "equipment": "ЛВС",
+        "message": "Обрыв силового кабеля",
+        "responsible": "Ветрова И.С",
         "read": false,
         "date": ""
     }

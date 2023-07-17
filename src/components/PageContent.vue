@@ -4,39 +4,41 @@ import data from "@/data.json";
 const loadedData = ref<dataItem[]>([]);
 const props = defineProps(["search"]);
 const { search } = toRefs(props);
+type dataItem = {
+  importance: String;
+  equipment: String;
+  message: String;
+  responsible: String;
+  read: Boolean;
+  date: String;
+};
 function getNow() {
   const today = new Date();
-  const date = 
-    today.getFullYear() + "-" + (today.getMonth() + 1) + "-" + today.getDate();
+  const date =
+    checkdateFormat(today.getDate()) + "." + checkdateFormat(today.getMonth() + 1) + "." + today.getFullYear();
   const time =
     today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
   const dateTime = date + " " + time;
   return dateTime;
 }
-type dataItem = {
-  importance: String,
-        equipment: String,
-        message: String,
-        responsible: String,
-        read: Boolean,
-        date: String
-};
-function loadData (){
+function checkdateFormat(date){
+  if(date <10){
+    return '0' + date;
+  }
+  return date;
+}
+function loadData() {
   const item: dataItem = data[0];
   item["date"] = getNow();
   loadedData.value.push(item);
   data.shift();
-};
-const setHighLight = (arr) => {
+}
+const setHighLight = (arr: []) => {
   return arr.map((item) => {
-    let status = false;
     if (
       search.value.length > 1 &&
-      item.message.indexOf(search.value.toLowerCase()) !== -1 &&
-      !status
-    ) {
+      item.message.indexOf(search.value.toLowerCase()) !== -1 ) {
       const regex = new RegExp(search.value, "g");
-      console.log(regex);
       return {
         ...item,
         message: item.message.replaceAll(
