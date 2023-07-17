@@ -43,7 +43,7 @@ const setHighLight = (arr: []) => {
         ...item,
         message: item.message.replaceAll(
           regex,
-          "<a  style='background:red'>" + search.value + "</a>"
+          "<a  style='background:yellow'>" + search.value + "</a>"
         ),
       };
     }

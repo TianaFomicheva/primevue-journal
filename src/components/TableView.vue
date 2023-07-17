@@ -13,13 +13,13 @@ const computedData = computed(() => data.value || [])
         <Column field="date" header="Дата"></Column>
         <Column field="importance" header="Важность"></Column>
         <Column field="equipment" header="Оборудование"></Column>
-        <Column field="message" header="Сообщение">
+        <Column field="message" sortable header="Сообщение">
         <template #body="slotProps">
             <span v-html="slotProps.data.message">
               </span>
           </template>
         </Column>
-        <Column field="responsible" header="Ответственный"></Column>
+        <Column field="responsible" sortable header="Ответственный"></Column>
       </DataTable>
 </template>
 

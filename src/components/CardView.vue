@@ -7,7 +7,7 @@ const { data  } = toRefs(props);
 const computedData = computed(() => data.value || [])
 onMounted(() => {
   document.addEventListener("keydown", function (e) {
-    if (e.code == "Enter") {
+    if (e.code == "Space") {
       activeItem.value.read = true;
     }
   });
@@ -17,7 +17,7 @@ onMounted(() => {
 
 <template  >
   <div class="grid">
-    <div v-for="(item, index) in computedData" :key="index" class="col-4">
+    <div v-for="(item, index) in computedData" :key="index" class="lg:col-4 sm:col-6 sm:col-12">
       <Card :class="{ read: item.read }" @click="activeItem = item">
         <template #content>
           <div class="card-content">

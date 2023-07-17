@@ -87,3 +87,22 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+@media screen and (max-width: 720px){
+  .grid > [class*=col]{
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  header{ 
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: end;
+  }
+  .p-component{
+    font-size: 0.8rem;
+  }
+  .p-paginator-element{
+    margin: 0;
+  }  
+}
